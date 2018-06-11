@@ -1,0 +1,30 @@
+//Font and Icon Colors
+.orange {
+  color:$orange;
+}
+
+.navy {
+  color:$navy;
+}
+
+.gray {
+  color: $gray;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+// Font Weights and General Font Styles
+.bold {
+  font-weight: $font-weight-bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+.white {
+  color: $white;
+}

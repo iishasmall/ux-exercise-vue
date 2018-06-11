@@ -1,0 +1,105 @@
+//Home Page Styling
+.home-page-body-content{
+  font-size: 1.2em;
+  text-align: center;
+}
+
+//Input Form
+.input-form-style {
+   @include linear-gradient-left($blue,rgba(0,0,0,0.5),$blue);
+   border: 1px solid $white;
+}
+//Summary
+
+.summary {
+  h2 {
+    font-weight: $font-weight-bold;
+    font-family: $font-family-star-wars-regular;
+    letter-spacing: .15em;
+  }
+}
+
+
+//List Group
+.list-group {
+
+
+  a {
+    color: $white ;
+    text-shadow: $btn-box-shadow-black;
+  }
+}
+
+.list-group-item {
+     @include linear-gradient($blue-gradient-one,$blue-gradient-two);
+     font-family: $font-family-star-wars-regular;
+     font-size:1.5em;
+     letter-spacing: .15em;
+
+}
+
+
+
+//Cards
+.card {
+   @include linear-gradient($blue-gradient-one,$blue-gradient-two);
+
+   .card-title {
+     color:$white;
+     font-family: $font-family-star-wars-regular;
+
+   }
+   .card-text {
+     color:$white;
+     font-weight:$font-weight-bold;
+
+   }
+}
+
+
+//Page Title Headers
+.page-header {
+
+    font-family: $font-family-star-wars-regular;
+    color:$orange;
+}
+
+//Vehicles Table
+.table-header-color {
+  @include linear-gradient-left($blue,rgba(0,0,0,0.5),$blue);
+
+}
+
+.table-content-color {
+  @include linear-gradient-left(rgba(255,255,255,.05),rgba(0,0,0,0.5),rgba(255,255,255,.05));
+}
+
+//Navigation
+.bg-inverse {
+  @include linear-gradient-left(rgba(0,0,0,0.5),$navy,rgba(0,0,0,0.5));
+  border-bottom: 1px solid $gray;
+}
+
+.navbar-nav {
+  display: inline-flex;
+  flex-direction: row;
+  padding-left: 50px;
+  margin-bottom: 10px;
+  margin-top: -40px;
+
+}
+
+.nav-item {
+  padding: $nav-link-padding;
+  a:hover{
+    color: $nav-tabs-active-link-hover-color;
+  }
+
+  a:hover {
+    color: $nav-tabs-active-link-hover-color;
+  }
+}
+
+.logo-position {
+  margin-top: -15px;
+}

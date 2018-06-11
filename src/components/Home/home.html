@@ -1,3 +1,25 @@
+
 <div>
-  <vue-markdown>{{readme}}</vue-markdown>
+<!--  <vue-markdown>{{readme}}</vue-markdown>-->
+<h1 class="mb-4 page-header text-center">Welcome To The Star Wars Vehicle and People Finder Page!</h1>
+
+  <div class="container">
+    <div class="row">
+      <p class="white bold home-page-body-content text-center">
+        This is the place where  Star Wars Fans can come and
+        find out about their favorite characters and vehicles!
+      </p>
+        <ul class="mx-auto inline-flex">
+
+          <router-link class="nav-item" tag="li" to="/people" exact>
+
+            <a class="nav-link text-center orange"><img class="logo-position" alt="Brand" src="~assets/images/people.png" height="100"> <br/>People</a>
+          </router-link>
+
+          <router-link class="nav-item" tag="li" to="/vehicles" exact>
+            <a class="nav-link text-center orange"><img class="logo-position" alt="Brand" src="~assets/images/vehicles.png" height="100"><br/> Vehicles</a>
+          </router-link>
+      </ul>
+  </div>
+  </div>
 </div>

@@ -8,7 +8,8 @@ export default Vue.extend({
 
   data() {
     return {
-      person: {}
+      person: {},
+      transport:'N/A'
     };
   },
 
@@ -23,11 +24,29 @@ export default Vue.extend({
       return starWarsResource.get(`people/${id}`)
         .then((response) => {
           this.person = response.data;
+
+         if(this.person.vehicles.length!=0){
+
+            return starWarsResource.get(this.person.vehicles[0])
+            .then((response)=> {
+              this.transport = response.data.name;
+            })
+            .catch((errorResponse) => {
+              // Handle error...
+              console.log('API responded with:', errorResponse);
+            });
+          }
+
         })
         .catch((errorResponse) => {
           // Handle error...
           console.log('API responded with:', errorResponse);
         });
+
+
     }
+
+
   }
+
 });

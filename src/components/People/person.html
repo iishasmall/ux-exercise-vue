@@ -4,9 +4,11 @@
   <div v-if="person.name">
     <div class="card card-block">
       <h1 class="card-title">{{ person.name }}</h1>
-      <p class="card-text">Height: {{ person.height }}</p>
+      <p class="card-text"><span>Height:</span> {{ person.height }}</p>
       <p class="card-text">Weight: {{ person.mass }}</p>
       <p class="card-text">Gender: {{ person.gender }}</p>
+
+     <p class="card-text">Vehicles: {{ transport }}</p>
     </div>
     <hr>
     <router-link class="" to="/people">
